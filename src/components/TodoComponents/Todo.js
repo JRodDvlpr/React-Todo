@@ -1,8 +1,15 @@
 import React from 'react';
 
-export class Todo extends React.Component {
+const Todo = props => {
+    return (
+        <div
+        className={`item${props.item.checked ? 'checked' : ""}`}
+        onClick={() => props.toggleItem(props.item.id)}
+        >
+            <p>{props.item.name}</p>
+        </div>
+    );
+};
 
-    return;
-}
 
 export default Todo;
