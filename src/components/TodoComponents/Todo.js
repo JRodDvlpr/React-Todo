@@ -2,7 +2,7 @@ import React from 'react';
 
 const Todo = props => {
     return (
-        <div
+        <div 
         className={`item${props.item.checked ? 'checked' : ""}`}
         onClick={() => props.toggleItem(props.item.id)}
         >

@@ -1,1 +1,118 @@
 /* CSS */
+
+* {
+	box-sizing: border-box;
+    font-family: "Helvetica Black", sans-serif;
+    
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+    background-color: rgba(99, 189, 180, 0.516);
+    letter-spacing: -0.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span {
+	color: black;
+}
+
+input {
+	margin-left: 5px;
+	background-color: #ffffff;
+    margin: 20px;
+    padding: 10px;
+	border: 2px;
+    color: #000000  ;
+    border-radius: 3px;
+}
+
+
+.add-button {
+	background-color: #d37400;
+    border: 1px solid #d37400;
+    border-radius: 5px;
+	color: white;
+    font-size: 14px;
+    margin-top: 15px;
+    width: 20%;
+    height: 40px;
+}   
+
+.App {
+	margin: 50px auto;
+	max-width: 600px;
+	/* border: 2px solid rebeccapurple; */
+	display: flex;
+    flex-flow: row wrap;
+    border: 1px solid #000000;
+	box-shadow: 12px 12px 2px 1px rgba(0, 255, 229, 0.7);
+}
+
+.container {
+    width: 100%;
+}
+
+.form {
+    width: 100%;
+    align-content: center;
+    display: flex;
+    justify-content: center;
+
+}
+
+.header {
+	
+	width: 100%;
+    display: flex;
+    justify-content: center;
+	padding: 0 60px;
+}
+
+.todo-list {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.item {
+    background-color: #d37400;
+    border-radius: 5px;
+	width: 20%;
+	height: 60px;
+    color: #fff;
+    margin: 10px;
+	text-align: center;
+	transition: all 0.5s ease-out;
+}
+
+.itemchecked {
+	background-color: #ff0000;
+    text-decoration: line-through;
+    border-radius: 5px;
+    width: 25%;
+    text-align: center;
+}
+
+
+.clear-button {
+    width: 25%;
+    background-color: #00b3d3;
+    border: 1px solid #d37400;
+    border-radius: 5px;
+	color: white;
+	font-size: 14px;
+}
+
+

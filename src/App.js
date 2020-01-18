@@ -30,6 +30,8 @@ class App extends React.Component {
   // you will need a place to store your state in this component.
   // design `App` to be the parent component of your application.
   // this component is going to take care of state, and any change handlers you need to work with your state
+
+
   toggleItem = id => {
     const newTodoList = this.state.todoList.map(item => {
       if (item.id === id) {
@@ -58,6 +60,7 @@ class App extends React.Component {
       todoList:[...this.state.todoList, newItem]
     });
   };
+  
   clearChecked = () => {
     this.setState({
     todoList: this.state.todoList.filter(item =>
@@ -69,11 +72,12 @@ class App extends React.Component {
     this.setState({
         todoText: e.target.value
     });
-};
-handleSubmit = e =>{
+  };
+  
+  handleSubmit = e =>{
     e.preventDefault();
     this.addItem(this.state.todoText);
-};
+  };
   
   render() {
     console.log('rendering...');
@@ -82,7 +86,7 @@ handleSubmit = e =>{
       <div className="header">  
         <h1>Create To do List!</h1>
       </div>
-      <div className="form">
+      <div className='container'>
         <TodoForm 
         addItem={this.addItem} 
         handleChanges={this.handleChanges}
